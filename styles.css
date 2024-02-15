@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    max-width: 1440px;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #153243;
+}
+
+.sketch-component {
+    background-color: #9CAFB7;
+    display: flex;
+    flex-direction: col;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+.menu {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #4281A4;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+
+button {
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.primary-blue {
+    background-color: #153243;
+    border: 1px solid white;
+    color: white;
+}
+
+.primary-blue:hover {
+    background-color: white;
+    color: #153243;
+    border: 1px solid #153243;
+}
+
+.light-red {
+    background-color: #FA757C;
+    border: 1px solid white;
+    color: black;
+}
+
+.red-alert:hover,
+.light-red:hover {
+    background-color: white;
+    color: #F8333C;
+    border: 1px solid white;
+}
+
+.red-alert {
+    background-color: #F8333C;
+    border: 1px solid white;
+    color: white;
+}
+
+.sketch-container {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-content: flex-start;
+}
+
+.pixel {
+    width: 20px;
+    height: 20px;
+    background-color: #153243;
+}
+
+.pixel:hover {
+    background-color: white;
+}
