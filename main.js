@@ -1,17 +1,16 @@
 const sketchContainer = document.querySelector('.sketch-container')
-const pixels = document.querySelectorAll('.pixel')
 
 sketchContainer.innerHTML = ""
 
 function createPixels (size) {
     for (let i = 1; i <= (2 * size); i++) {
         sketchContainer.innerHTML += `<div class="pixel"></div>`
-    }
-    
-    // paint() <-- Tried with this
+    }    
+    paint()
 }
 
 function paint() {
+    const pixels = document.querySelectorAll('.pixel')
     pixels.forEach(pixel => {
         pixel.addEventListener('mouseout', () => {
             pixel.style.backgroundColor = "white";
@@ -21,5 +20,3 @@ function paint() {
 
 // MAX = 50 - Otherwise is too much resources consumption (I guess...?)
 createPixels(50)
-
-// paint() <-- Tried with other approach
