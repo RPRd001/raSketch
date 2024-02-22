@@ -26,7 +26,7 @@ function paint() {
     
     pixels.forEach(pixel => {
         // On each click will paint the div below the mouse
-        pixel.addEventListener('click', () => {
+        pixel.addEventListener('mouseover', () => {
             pixel.style.backgroundColor = "white";
         })
 
